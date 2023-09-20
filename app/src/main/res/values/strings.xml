@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">iniciativaMDLZ</string>
+    <string name="app_name">Mondelez App</string>
+    <string name="web_client_id">1044069856899-1p85iajfov1mhevc7sv2orb601ctjd05.apps.googleusercontent.com</string>
+    <string name="sign_out_label">Cerrar sesión</string>
+
 </resources>
