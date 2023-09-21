@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.iniciativamdlz.R
 import com.example.iniciativamdlz.databinding.FragmentHomeBinding
@@ -18,8 +19,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentHomeBinding
 
     //private lateinit var oneTapClient: SignInClient
     private lateinit var username: String
@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_home, container, false)
         return binding.root
     }
 
@@ -48,11 +48,6 @@ class HomeFragment : Fragment() {
         binding.controlButton.setOnClickListener { navigateToControlForm() }
         binding.experienceButton.setOnClickListener { navigateToExpirienceForm() }
         binding.signOutButton.setOnClickListener { signOut() }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 
     private fun signOut() {
