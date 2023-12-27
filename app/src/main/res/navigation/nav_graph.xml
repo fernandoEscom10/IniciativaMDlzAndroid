@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.iniciativamdlz.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_encuestaSatisfaccionFragment"
+            app:destination="@id/encuestaSatisfaccionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_cifrasControlFragment"
+            app:destination="@id/cifrasControlFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_reporteIncidentesFragment"
+            app:destination="@id/reporteIncidentesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/encuestaSatisfaccionFragment"
+        android:name="com.example.iniciativamdlz.fragments.EncuestaSatisfaccionFragment"
+        android:label="EncuestaSatisfaccionFragment" />
+    <fragment
+        android:id="@+id/cifrasControlFragment"
+        android:name="com.example.iniciativamdlz.fragments.CifrasControlFragment"
+        android:label="CifrasControlFragment" />
+    <fragment
+        android:id="@+id/reporteIncidentesFragment"
+        android:name="com.example.iniciativamdlz.fragments.ReporteIncidentesFragment"
+        android:label="ReporteIncidentesFragment" />
+</navigation>

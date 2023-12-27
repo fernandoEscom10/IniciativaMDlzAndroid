@@ -3,6 +3,7 @@ package com.example.iniciativamdlz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
 import android.util.Log
 import android.view.View
 import androidx.databinding.DataBindingUtil
