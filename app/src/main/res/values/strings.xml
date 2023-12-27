@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">iniciativaMDLZ</string>
+    <string name="app_name">Mondelez App</string>
+    <string name="web_client_id">1044069856899-1p85iajfov1mhevc7sv2orb601ctjd05.apps.googleusercontent.com</string>
+
+    <!--Login Screen-->
+    <string name="credentials_error_label">No se encontró cuenta de Google</string>
+    <string name="copyrigth_label">© Globant</string>
+    <string name="unexpected_error_label">Ocurrió un error inesperado</string>
+
+    <!--Home Screen-->
+    <string name="sign_out_label">Cerrar sesión</string>
+    <string name="experience_form_label">Satisfacción MC1</string>
+    <string name="incident_form_label">Incidencias MC1</string>
+    <string name="control_form_label">Control de Cifras</string>
+    <string name="welcome_label">Bienvenido </string>
+    <string name="username_label">Raul Partida I</string>
+
+    <!--Share Preference-->
+    <string name="username_share_preference">username</string>
+    <string name="email_share_preference">email</string>
+
+    <!--Content Description-->
+    <string name="mondelez_logo_content_description">Mondelez logo</string>
+
 </resources>
